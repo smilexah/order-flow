@@ -60,6 +60,12 @@ services:
 #    networks:
 #      - app-platform
 
+#  order-service:
+#    # ports:           ← убираем эту секцию
+#    #   - "8083:8080"  ← порт не публикуем
+#    expose:
+#      - "8080"         ← только внутри Docker сети
+
   postgres:
     container_name: auth-postgres
     image: postgres:18

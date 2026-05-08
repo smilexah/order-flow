@@ -34,10 +34,10 @@ public class UserServiceImpl implements UserService {
     private final MessageSource messageSource;
     private final UserMapper userMapper;
 
-    @Value("${spring.application.username}")
+    @Value("${keycloak.admin-username}")
     private String keycloakUsername;
 
-    @Value("${spring.application.password}")
+    @Value("${keycloak.admin-password}")
     private String keycloakPassword;
 
     @Override
